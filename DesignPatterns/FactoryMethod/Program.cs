@@ -21,7 +21,7 @@ namespace FactoryMethod
                 var pizza = pizzaria.MontaPizzaa(pizzaEscolhida);
 
                 Console.WriteLine(pizza.Preparar());
-                Console.WriteLine("\n Pizza concluída com sucesso")
+                Console.WriteLine("\n Pizza concluída com sucesso");
             }
             catch (Exception ex)
             {

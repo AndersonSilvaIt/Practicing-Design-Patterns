@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C26E33C-F84B-4EA4-A04D-3D640EDB04AB}</ProjectGuid>
+    <ProjectGuid>{88C998D6-0DD4-46F6-8832-7DF972EF7246}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FactoryMethod</RootNamespace>
-    <AssemblyName>FactoryMethod</AssemblyName>
+    <RootNamespace>AbstractFactory</RootNamespace>
+    <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaCalabrezaRJ.cs" />
-    <Compile Include="PizzaCalabrezaSP.cs" />
-    <Compile Include="PizzaFactoryMethod.cs" />
-    <Compile Include="PizzaFactoryRJ.cs" />
-    <Compile Include="PizzaFactorySP.cs" />
-    <Compile Include="PizzaMussarelaRJ.cs" />
-    <Compile Include="PizzaMussarelaSP.cs" />
-    <Compile Include="PizzaSimpleFactory.cs" />
+    <Compile Include="Domain\Enums\TipoBolo.cs" />
+    <Compile Include="Domain\Enums\TipoMassa.cs" />
+    <Compile Include="Domain\Enums\TipoPizza.cs" />
+    <Compile Include="Domain\Products\Bolo.cs" />
+    <Compile Include="Domain\Products\BoloChocolate.cs" />
+    <Compile Include="Domain\Products\BoloLaranja.cs" />
+    <Compile Include="Domain\Products\MassaBase.cs" />
+    <Compile Include="Domain\Products\PizzaMussarela.cs" />
+    <Compile Include="Domain\Products\Pizza.cs" />
+    <Compile Include="Domain\Products\PizzaCalabreza.cs" />
+    <Compile Include="Factory\AbstractFactory\BoloFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\MassasAbstractFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\PizzaFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

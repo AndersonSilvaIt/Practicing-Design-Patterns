@@ -5,7 +5,7 @@ namespace FactoryMethod
 {
     public abstract class Pizza
     {
-        protected string Nome { get; set }
+        protected string Nome { get; set; }
         protected string Massa;
         protected string Molho;
         protected ArrayList ingredientes = new ArrayList();
